@@ -6,7 +6,6 @@ yarn-debug.log*
 yarn-error.log*
 firebase-debug.log*
 firebase-debug.*.log*
-
 # Firebase cache
 .firebase/
 
@@ -66,3 +65,4 @@ node_modules/
 .env
 
 /public/
+/hosting.txt
