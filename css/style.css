@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+
+#events, #soc-menu {
+    padding: 0;
+}
+
+#soc-menu {
+    border-right: 1px solid #000;
+}
+
+.sidenav li {
+    border-bottom: 1px solid #333;
+    line-height: 48px;
+    background: #000;
+    height: 48px;
+    font-size: 12px;
+}
+.sidenav li a {
+    color: #fff;
+}
+.sidenav {
+    background: #000;
+    color: #fff;
+    padding-top: 60px;
+}
+nav .brand-logo {
+    height: 55px;
+}
+
+.menu-country {
+    flex-direction: column;
+    height: 100%;
+}
+
+.list-country {
+    height: 100%;
+    background-color: rgb(33, 33, 33);
+    overflow: hidden;
+    transition: height 400ms ease 0s;
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-country li {
+    list-style-type: none;
+}
+
+.item-country {
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+    display: block;
+    font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 8px;
+    height: 35px;
+    line-height: 18px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(255 153 80);
+}
+
+#modal {
+    background: #000;
+}
+
+
+.modal-content {
+    color:#fff;
+}
+.modal .modal-footer {
+    background: rgb(255, 138, 0)!important;
+}
+
+a {
+    color:#fff;
+}
+.flag {
+    margin-right: 10px;
+}
+.category {color:rgb(255, 138, 0);}
+.menu-item {color:#ffffff!important}
+.menu-item:hover {
+    color: rgb(255, 138, 0)!important;
+}
+.head-row {
+    width: 100%;
+    background-color: rgb(33, 33, 33);
+    color: rgb(170, 170, 170);
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 10px;
+    display: flex;
+}
+
+.head-row .date {
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+.res-row {
+    display: block!important;
+}
+
+.res-row {
+    border-bottom: 1px solid rgb(33, 33, 33);
+    font-size: 12px;
+    color: rgb(170, 170, 170);
+    cursor: default;
+    position: relative;
+    display: none;
+}
+
+.res-row::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 4px;
+    display: block;
+    left: 0px;
+    z-index: 20;
+    top: 0px;
+}
+
+.stat-col {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+    position: relative;
+    padding: 10px 55px 10px 4px;
+    flex: 1 1 0%;
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+}
+.stat-col:hover {
+    background:#333;
+    color:#fff;
+}
+
+.stat-match {
+    flex: 0 0 50px;
+    margin: auto 0px;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-left: 0px;
+}
+
+.stat-fulltime {
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.stat-col .middle {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.stat-col .middle .home {
+    text-align: right;
+}
+
+.stat-col .middle .home, .stat-col .middle .away {
+    flex: 1 1 0%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stat-col .middle .score {
+    flex: 0 0 50px;
+    text-align: center;
+}
+
+.preloader-wrapper.big.active {
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.dropdown-content{
+   width: max-content !important;
+   height:auto !important;
+}
+
+.cards-container .card {
+    display: inline-block;
+    overflow: visible;
+}
+#body-content {
+    margin-top: 100px;
+}
+.offline, .no-favorite {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    display: block;
+    margin: 30px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .cards-container {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    #soc-menu {
+        display: none;       
+    }
+
+    .item-country {
+        margin-left: 10%;
+    }
+    .country-code {
+        padding: 0;
+    }
+    .container {
+        width: 100%;
+    }
+    .res-row {
+        padding: 0 15px;
+    }
+
+    #body-content {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .cards-container {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .cards-container {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
